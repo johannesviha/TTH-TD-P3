@@ -1,250 +1,199 @@
-*, *:before, *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
+* {
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
-body {
-  font-family: 'Roboto', sans-serif;
-  color: #384047;
+html{
   padding: 0;
   margin: 0;
 }
 
-form {
-  max-width: 500px;
-  margin: 10px auto;
-  padding: 0;
-  background: white;
-  border-radius: 8px;
-  border: none;
-  padding-top: 0;
+body{
+  min-width: 100%;
+}
+
+/* flex */
+
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: white;
+  min-width: 100%;
+  background-color: #053857;
+}
+
+.form-container{
+  max-width: 700px;
   display: flex;
   flex-direction: column;
-  margin-top: 0;
+  flex-wrap: wrap;
+  margin: 40px auto;
+  padding: 0 20px;
+  background-color: rgb(247, 247, 246);
 }
 
-fieldset {
-  border-style: none;
+.form-item{
+  min-width: 100%;
 }
 
-form label {
-  color: rgb(146, 158, 170);
-  font-size: 1.3em;
-}
-
-legend {
-  margin-bottom: 0;
-}
-
-/*-------- Class styles ---------*/
-.form-h1 {
-  text-align: center;
-  height: 90px;
-  width: 100vw;
-  background-color: rgb(45, 57, 69);
-  color: white;
-  padding: 1em 0;
-  font-size: 1.5em;
-  margin: 0;
-  text-transform: uppercase;
-}
-
-h2 {
-  font-size: 2em;
-}
-
-.signUp-title {
-  text-align: center;
-  font-size: 2em;
-  letter-spacing: 1px;
-  margin-bottom: 10px;
-}
-
-.signUp-info {
-  color: rgb(45, 57, 69);
-  font-size: 1.2em;
-  text-align: center;
-  width: 95%;
-  margin: auto;
-  margin-bottom: 2em;
-  color: rgb(170, 175, 180);
-  font-size: 1.3em;
-}
-
-.hrTop-1 {
-  height: 8px;
-  background-color: rgb(45, 57, 69);
-  width: 95%;
-  margin-bottom: -4px;
-}
-
-.hrTop-2 {
-  height: 3px;
-  background-color: rgb(45, 57, 69);
-  width: 95%;
-}
-
-.contact-header {
-  padding-left: .2em;
-}
-
-.hrBottom {
-  height: 3px;
-  background-color: rgb(45, 57, 69);
-  width: 95%;
-}
-
-.newLetter-heading {
-  padding-left: .2em;
-}
-
-.label_textArea {
-  margin-top: 20px;
-  margin-bottom: 10px;
-  padding-right: 1em;
-  margin-left: -.5em;
-  color: rgb(45, 57, 69);
-  font-size: 1.2em;
-  width: 95%;
-  color: rgb(170, 175, 180);
-}
-
-button {
-  padding: 15px 39px 18px 15px;
-  color: #fff;
-  background-color: rgb(78, 187, 181);
-  font-size: 1.5em;
-  text-align: center;
-  border-radius: 5px;
-  width: 95%;
+.field-container{
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 12px 0px;
   border: none;
-  font-weight: 600;
+  font-size: 1.3em;
+  margin-bottom: 20px;
+}
+
+.field-item{
+  min-width: 100%;
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-.copyright {
+/* form */
+
+form h1{
   text-align: center;
-  color: rgb(170, 175, 180);
+  color: #08486e;
+}
+
+h1 + p {
+  text-align: center;
+  color: #555555;
   font-size: 1.3em;
-  font-style: italic;
+  margin-top: 0px;
+  padding: 6px 40px 30px;
 }
 
-/* Form Fields -------------------- */
-.contact input,
-.contact textarea,
-#state {
-  font-size: 1em;
-  color: black;
-  font-weight: 300;
-  width: 95%;
-  border: none;
-  height: auto;
-  padding: 15px;
-  outline: 0;
-  margin-bottom: 1.2em;
-  border-radius: .3em;
-  border: 3px solid rgba(0, 0, 0, 0.05);
-  background-color: #e8eeef;
+.border{
+  width: 100%;
+  height: 12px;
+  border-top: 6px solid #08486e;
+  border-bottom: 2px solid #08486e;
+  margin-bottom: 20px;
 }
 
-label {
-  display: block;
-  padding-left: 5px;
+.bottom-border{
+  padding-bottom: 30px;
+  border-bottom: 2px solid #08486e;
 }
 
-#zipcode {
-  width: 40%;
+legend{
+  font-size: 1.75em;
+  font-weight: bold;
+  color: #08486e;
 }
 
-.newsletter p,
-.newsletter_text {
-  color: rgb(45, 57, 69);
+input, select{
   font-size: 1.2em;
-  width: 95%;
-  padding-top: .5em;
-  padding-bottom: .2em;
-  color: rgb(170, 175, 180);
-  font-size: 1.3em;
+  padding: 8px 20px;
+  margin: 8px 0;
+  color: #08486e;
+  border: 2px solid #08486e;
+  border-radius: 8px;
+  letter-spacing: 1.2px;
 }
 
-textarea {
-  width: 95%;
-  height: 150px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  background: #f4f7f8;
-}
-
-/*-------- Psuedo-classes ---------*/
-input:focus,
-textarea:focus {
-  border-color: rgb(45, 57, 69);
-}
-
-input:required:focus {
-  box-shadow: 4px 4px 20px rgba(200, 0, 0, 0.85);
-}
-
-input[type="checkbox"]+label {
-  display: inline;
-}
-
-input[type="radio"]+label {
-  display: inline;
-}
-
-input[type="checkbox"],
-input[type="radio"] {
-  margin-right: 10px;
-}
-
-input[placeholder] {
+input::placeholder{
   text-align: right;
+  font-size: .8em
 }
 
-/* Media Queries -------------------- */
-@media(min-width: 768px) {
-  .form-h1 {
-    position: absolute;
-    width: 100%;
-    text-align: center;
+fieldset:hover{
+  background-color: rgba(224, 244, 255, 0.5);
+}
+
+label:hover, label:focus{
+  font-size: 1.2em;
+  transition: font-size 1s;
+  cursor: pointer;
+}
+
+input[type="text"]:hover, input[type="text"]:focus, input[type="email"]:hover, input[type="email"]:focus,
+input[type="tel"]:hover, input[type="tel"]:focus, select:hover, select:focus, textarea:hover, textarea:focus,
+input[type="checkbox"]:hover, input[type="checkbox"]:focus, input[type="radio"]:hover, input[type="radio"]:focus{
+  cursor: pointer;
+  border: 2px solid #04ecfb;
+  transform: scale(1.04, 1.04);
+  transition: transform 1s;
+  outline: none;
+}
+
+#zip{
+  min-width: 50%;
+  max-width: 50%;
+}
+
+form fieldset p:not(:first-child){
+  color: #4ebbb5;
+  font-size: 1.3em;
+  line-height: 1.15em;
+}
+
+textarea{
+  width: 100%;
+  height: 125px;
+  padding: 5px;
+  font-size: 1.4rem;
+  overflow-y: scroll;
+  line-height: 1.15em;
+  letter-spacing: 1.2px;
+  margin-top: 15px;
+}
+
+.btn{
+  padding: 20px 20px;
+  background-color: #4ebbb5;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  font-size: 1.4em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+
+.btn:hover{
+  cursor: pointer;
+  transform: scale(1.05, 1.05);
+  transition: transform 1s;
+}
+
+.btn:active{
+  transform: scale(.95, .95);
+  transition: transform 1s;
+}
+
+footer{
+  width: inherit;
+  margin: 50px auto;
+  text-align: center;
+  font-size: 1.05em;
+  color: gray;
+}
+
+
+@media screen and (min-width: 768px) {
+  .field-item{
+    max-width: 34%;
+    min-width: 33%;
+    flex-grow: 1;
     align-self: center;
-    font-size: 2em;
   }
-
-  .signUp-title {
-    padding-top: 100px;
+  .triple{
+    flex-grow: 3;
+    min-width: 100%
   }
-
-  .newsletter_text {
-    margin-top: 0;
+  .double{
+    flex-grow: 2;
+    max-width: 100%
   }
-
-  form {
-    max-width: 650px;
-  }
-
-  input[type="text"]+label {
-    display: inline-block;
-  }
-
-  .form-box {
-    display: flex;
-  }
-
-  .form-box label {
-    flex-basis: 9rem;
-    flex-grow: 0;
-    flex-shrink: 0;
-  }
-
-  legend h1 {
-    margin-right: 20px;
-  }
-
-  .lowerForm {
-    text-align: left;
+  #zip{
+    min-width: 20%;
+    max-width: 20%;
   }
 }
